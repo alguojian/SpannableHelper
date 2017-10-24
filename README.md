@@ -1,5 +1,24 @@
 # SpannableString使用记录
 
+[![](https://jitpack.io/v/ALguojian/SpannableHelper.svg)](https://jitpack.io/#ALguojian/SpannableHelper)
+
+1.Add it in your root build.gradle at the end of repositories:
+```
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+2.Add the dependency
+```
+	dependencies {
+	        compile 'com.github.ALguojian:SpannableHelper:1.0'
+	}
+
+```
+
 
 用法：
 ```
