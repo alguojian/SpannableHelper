@@ -2,7 +2,9 @@
 
 [![](https://jitpack.io/v/ALguojian/SpannableHelper.svg)](https://jitpack.io/#ALguojian/SpannableHelper)
 
-![示意图](http://ouvjn19yd.bkt.clouddn.com/spannableHelper%E7%A4%BA%E6%84%8F%E5%9B%BE.png)
+<center>
+![](http://ouvjn19yd.bkt.clouddn.com/spannableHelper%E7%A4%BA%E6%84%8F%E5%9B%BE.png?imageMogr2/auto-orient/thumbnail/!50p/blur/1x0/quality/90|watermark/2/text/5p2O5YWI5qOu5ZWK5p2O5YWI55Sf/font/5a6L5L2T/fontsize/320/fill/Izk3QTlDMw==/dissolve/94/gravity/SouthEast/dx/10/dy/10|imageslim)</center>
+
 
 1.Add it in your root build.gradle at the end of repositories:
 ```
