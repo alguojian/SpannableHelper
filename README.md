@@ -2,6 +2,8 @@
 
 [![](https://jitpack.io/v/ALguojian/SpannableHelper.svg)](https://jitpack.io/#ALguojian/SpannableHelper)
 
+![示意图](http://ouvjn19yd.bkt.clouddn.com/spannableHelper%E7%A4%BA%E6%84%8F%E5%9B%BE.png)
+
 1.Add it in your root build.gradle at the end of repositories:
 ```
 	allprojects {
@@ -22,21 +24,23 @@
 
 用法：
 ```
- asd.setColor(Color.GREEN, 2, 6)
-                .setBackGround(Color.BLUE, 4, 8)
-                .setBold(6, 10)
-                .setOnClick(9, 14, Color.YELLOW)
-                .setOnClickSpanListener(new SpannableStringUtils.OnClickSpanListener() {
-                    @Override
-                    public void OnClickSpanListener() {
+  SpannableStringUtils spannableStringUtils = new SpannableStringUtils("飞流直下三千尺，疑是银河落九天");
 
-                        Toast.makeText(MainActivity.this, "点我", Toast.LENGTH_SHORT).show();
-                    }
-                });
+         spannableStringUtils.setColor(Color.GREEN, 2, 6)
+                 .setBackGround(Color.BLUE, 4, 8)
+                 .setBold(6, 10)
+                 .setOnClick(9, 14, Color.YELLOW)
+                 .setOnClickSpanListener(new SpannableStringUtils.OnClickSpanListener() {
+                     @Override
+                     public void OnClickSpanListener() {
 
-        textView.setMovementMethod(LinkMovementMethod.getInstance());
-        textView.setTextSize(20);
-        textView.setText(asd);
+                         Toast.makeText(MainActivity.this, "点我", Toast.LENGTH_SHORT).show();
+                     }
+                 });
+
+         textView.setMovementMethod(LinkMovementMethod.getInstance());
+         textView.setTextSize(20);
+         textView.setText(spannableStringUtils);
 ```
 
 ### 简介：

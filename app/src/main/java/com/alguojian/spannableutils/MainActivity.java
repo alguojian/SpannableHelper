@@ -23,9 +23,9 @@ public class MainActivity extends AppCompatActivity {
 
     private void init() {
 
-        SpannableStringUtils asd = new SpannableStringUtils("飞流直下三千尺，疑是银河落九天");
+        SpannableStringUtils spannableStringUtils = new SpannableStringUtils("飞流直下三千尺，疑是银河落九天");
 
-        asd.setColor(Color.GREEN, 2, 6)
+        spannableStringUtils.setColor(Color.GREEN, 2, 6)
                 .setBackGround(Color.BLUE, 4, 8)
                 .setBold(6, 10)
                 .setOnClick(9, 14, Color.YELLOW)
@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
 
         textView.setMovementMethod(LinkMovementMethod.getInstance());
         textView.setTextSize(20);
-        textView.setText(asd);
+        textView.setText(spannableStringUtils);
 
     }
 
