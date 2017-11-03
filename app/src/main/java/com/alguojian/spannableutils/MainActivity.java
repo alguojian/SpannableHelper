@@ -2,6 +2,7 @@ package com.alguojian.spannableutils;
 
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.method.LinkMovementMethod;
 import android.widget.TextView;
@@ -26,9 +27,10 @@ public class MainActivity extends AppCompatActivity {
         SpannableStringUtils spannableStringUtils = new SpannableStringUtils("飞流直下三千尺，疑是银河落九天");
 
         spannableStringUtils.setColor(Color.GREEN, 2, 6)
-                .setBackGround(Color.BLUE, 4, 8)
+                .setBackGround(ContextCompat.getColor(this,R.color.bbb), 4, 8)
                 .setBold(6, 10)
-                .setOnClick(9, 14, Color.YELLOW)
+                .setOnClick(9, 14, ContextCompat.getColor(this,R.color.aaa))
+                .setImage(this, R.mipmap.ic_launcher, 3, 6, 120, 160)
                 .setOnClickSpanListener(new SpannableStringUtils.OnClickSpanListener() {
                     @Override
                     public void OnClickSpanListener() {

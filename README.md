@@ -26,21 +26,23 @@
 ```
   SpannableStringUtils spannableStringUtils = new SpannableStringUtils("飞流直下三千尺，疑是银河落九天");
 
-         spannableStringUtils.setColor(Color.GREEN, 2, 6)
-                 .setBackGround(Color.BLUE, 4, 8)
-                 .setBold(6, 10)
-                 .setOnClick(9, 14, Color.YELLOW)
-                 .setOnClickSpanListener(new SpannableStringUtils.OnClickSpanListener() {
-                     @Override
-                     public void OnClickSpanListener() {
+          spannableStringUtils.setColor(Color.GREEN, 2, 6)
+                  .setBackGround(ContextCompat.getColor(this,R.color.bbb), 4, 8)
+                  .setBold(6, 10)
+                  .setOnClick(9, 14, ContextCompat.getColor(this,R.color.aaa))
+                  .setImage(this, R.mipmap.ic_launcher, 3, 6, 120, 160)
+                  .setOnClickSpanListener(new SpannableStringUtils.OnClickSpanListener() {
+                      @Override
+                      public void OnClickSpanListener() {
 
-                         Toast.makeText(MainActivity.this, "点我", Toast.LENGTH_SHORT).show();
-                     }
-                 });
+                          Toast.makeText(MainActivity.this, "点我", Toast.LENGTH_SHORT).show();
+                      }
+                  });
 
-         textView.setMovementMethod(LinkMovementMethod.getInstance());
-         textView.setTextSize(20);
-         textView.setText(spannableStringUtils);
+          textView.setMovementMethod(LinkMovementMethod.getInstance());
+          textView.setTextSize(20);
+          textView.setText(spannableStringUtils);
+
 ```
 
 ### 简介：
