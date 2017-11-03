@@ -2,7 +2,7 @@
 
 [![](https://jitpack.io/v/ALguojian/SpannableHelper.svg)](https://jitpack.io/#ALguojian/SpannableHelper)
 
-<div align=center><img width="350" height="750" src="http://ouvjn19yd.bkt.clouddn.com/spannableHelper%E7%A4%BA%E6%84%8F%E5%9B%BE.png"/></div>
+<div align=center><img width="350" height="600" src="http://ouvjn19yd.bkt.clouddn.com/spannableHelper%E7%A4%BA%E6%84%8F%E5%9B%BE.png"/></div>
 
 1.Add it in your root build.gradle at the end of repositories:
 ```
